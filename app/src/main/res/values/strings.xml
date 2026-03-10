@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">منصة الأستاذ</string>
+    <string name="welcome_back">WELCOME BACK</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="login_with_social_media">Login with Social Media</string>
+    <string name="hello_sign_in">HELLO SIGN IN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_account_sign_up">Don\'t have account? <font color='#7C19D7'> Sign Up</font></string>
+    <string name="have_account_sign_in"> Have an account? <font color='#7C19D7'> Sign in</font></string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_your_account">CREATE YOUR ACCOUNT</string>
+    <string name="facebook_app_id">783369934026292</string>
+    <string name="fb_login_protocol_scheme">fb783369934026292</string>
+    <string name="facebook_client_token">1214c4146903cee4cc67db4b26eea8dd</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="welcome_to_student_activity">Welcome to student Activity</string>
+    <string name="welcome_to_teacher_activity">Welcome to Teacher Activity</string>
+    <string name="title_activity_teacher_activities">TeacherActivities</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="courses">Courses</string>
+    <string name="generate_codes">Generate Codes</string>
+    <string name="manage_students">Manage Students</string>
+    <string name="delete_lesson">حذف الحصة</string>
+    <string name="lesson_image">صورة الحصة</string>
+    <string name="Delete_Lesson">حذف الحصة</string>
+    <string name="Credits_and_class">الكريدتس: 2 • الصف الثالث الثانوي</string>
+    <string name="lesson_title">اسم الحصة</string>
+    <string name="Update_Lesson">تعديل الحصة</string>
+    <string name="add_course">اضافة حصة</string>
+    <string name="lesson_description">وصف الحصة</string>
+    <string name="video_picture">اختيار صورة</string>
+    <string name="save_course">حفظ الحصة</string>
+    <string name="Credits_hint">الكريدتس</string>
+    <string name="Description_hint">الوصف</string>
+    <string name="CourseTitle_hint">اسم الحصة</string>
+    <string name="Add_New_Course">إضافة حصة جديدة</string>
+    <string name="modify_lesson">تعديل الحصة</string>
+    <string name="modify_lesson_text">تعديل الحصة</string>
+    <string name="youtube_video_id">YouTube Video ID</string>
+    <string name="video_id_v">ملحوظة: Video ID هو الجزء بعد v= في رابط اليوتيوب.</string>
+    <string name="txtGenerate">توليد</string>
+    <string name="txtGeneratedCodes">الأكواد المولّدة</string>
+    <string name="hintTimeOfUsingCodes">عدد مرات استخدام الأكواد</string>
+    <string name="hintValidationDate">مدة الصلاحية (بالأيام)</string>
+    <string name="hintCreditsOfAllCodes">كريدتس لكل كود</string>
+    <string name="hintNumberOfCodesGeneratedCodes">عدد الأكواد</string>
+    <string name="generatedCodesText">توليد دفعة أكواد</string>
+    <string name="active">Active</string>
+    <string name="expiry_2026_02_01">Expiry: 2026/02/01</string>
+    <string name="credits_10">Credits: 10</string>
+    <string name="copy">Copy</string>
+    <string name="abcd_1234">ABCD-1234</string>
+    <string name="deleteCode">Delete</string>
+    <string name="student_account">Student Account</string>
+    <string name="student_name">Student Name</string>
+    <string name="block_student">Block Student</string>
+    <string name="unblock_student">Unblock Student</string>
+    <string name="not_blocked">Not Blocked</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="credits_100">Credits: 100</string>
+    <string name="go_to_credits_page">Go to Credits Page</string>
+    <string name="user_example_com">user@example.com</string>
+    <string name="user_profile_image">User Profile Image</string>
+    <string name="lessonGrade">مرحلة التدريس</string>
+    <string name="_100">100</string>
+    <string name="redeem">Redeem</string>
+    <string name="enter_code">Enter code</string>
+    <string name="redeem_code">Redeem Code</string>
+    <string name="_0">0</string>
+    <string name="title">Title</string>
+    <string name="used_at">Used At :</string>
+    <string name="used_by">Used By :</string>
+    <string name="created_by">Created By :</string>
+</resources>
