@@ -1,9 +1,6 @@
 package com.ahmed.ostazahmed.TeacherRecyclerViews
 
 import android.annotation.SuppressLint
-import android.content.ClipData
-import android.content.ClipboardManager
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
