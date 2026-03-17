@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.ahmed.ostazMohamed"
+    namespace = "com.ahmed.ostazahmed"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.ahmed.ostazMohamed"
+        applicationId = "com.ahmed.ostazahmed"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -81,6 +81,7 @@ dependencies {
     implementation("com.pierfrancescosoffritti.androidyoutubeplayer:custom-ui:13.0.0")
     // Lottie Animations dependency
     implementation("com.airbnb.android:lottie:6.4.0")
+    // Exporting PDF dependency
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

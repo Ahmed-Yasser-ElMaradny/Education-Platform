@@ -14,7 +14,6 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
-        <!-- عنوان الصفحة -->
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="0dp"
@@ -27,7 +26,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- كارد المحتوى -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardForm"
             android:layout_width="0dp"
@@ -46,12 +44,10 @@
                 android:layout_height="wrap_content"
                 android:padding="16dp">
 
-                <!-- اسم الحصة -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilLessonName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-
                     app:boxCornerRadiusTopStart="14dp"
                     app:boxCornerRadiusTopEnd="14dp"
                     app:boxCornerRadiusBottomStart="14dp"
@@ -73,13 +69,11 @@
                         android:maxLines="1" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- الوصف -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilDescription"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-
                     app:boxCornerRadiusTopStart="14dp"
                     app:boxCornerRadiusTopEnd="14dp"
                     app:boxCornerRadiusBottomStart="14dp"
@@ -103,13 +97,11 @@
                         android:gravity="top|start" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- Credits + VideoId في صف واحد -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilCredits"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-
                     app:boxCornerRadiusTopStart="14dp"
                     app:boxCornerRadiusTopEnd="14dp"
                     app:boxCornerRadiusBottomStart="14dp"
@@ -138,7 +130,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-
                     app:boxCornerRadiusTopStart="14dp"
                     app:boxCornerRadiusTopEnd="14dp"
                     app:boxCornerRadiusBottomStart="14dp"
@@ -163,11 +154,12 @@
                         android:maxLines="1" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilLessonGrade"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     app:boxCornerRadiusTopStart="14dp"
                     app:boxCornerRadiusTopEnd="14dp"
                     app:boxCornerRadiusBottomStart="14dp"
@@ -178,21 +170,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/tilCredits"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:hint="@string/lessonGrade"
-                    android:layout_marginTop="12dp">
+                    android:hint="@string/lessonGrade">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etLessonGrade"
+                    <AutoCompleteTextView
+                        android:id="@+id/spinnerLessonGradeModify"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:inputType="none"
                         android:textColor="#0B1220"
                         android:textColorHint="#9CA3AF"
-                        android:inputType="textCapSentences"
-                        android:maxLines="1" />
+                        tools:ignore="SpeakableTextPresentCheck" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-
-                <!-- زر الحفظ -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnModifyLesson"
                     android:layout_width="0dp"
@@ -214,7 +203,6 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- ملاحظة صغيرة تحت -->
         <TextView
             android:id="@+id/tvHint"
             android:layout_width="0dp"

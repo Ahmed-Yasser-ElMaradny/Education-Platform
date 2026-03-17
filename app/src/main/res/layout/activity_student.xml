@@ -8,8 +8,6 @@
     android:background="#F9FAFB"
     tools:context=".StudentActivity">
 
-
-
     <View
         android:id="@+id/headerBackground"
         android:layout_width="match_parent"
@@ -100,7 +98,6 @@
             android:contentDescription="@string/go_to_credits_page"
             android:scaleType="fitCenter"
             android:src="@drawable/schoolbag"
-
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
@@ -118,6 +115,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headerBackground" />
 
+    <Spinner
+        android:id="@+id/spinnerFilterGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:background="?attr/selectableItemBackground"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCoursesTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCoursesTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/studentCoursesRecyclerView"
         android:layout_width="match_parent"
@@ -129,4 +138,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCoursesTitle"
         tools:listitem="@layout/item_lesson_teacher" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

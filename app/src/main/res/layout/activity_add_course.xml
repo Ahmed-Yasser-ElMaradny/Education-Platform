@@ -14,12 +14,11 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
-        <!-- عنوان الصفحة -->
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/Add_New_Course"
+            android:text="إضافة حصة جديدة"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="#0B1220"
@@ -27,7 +26,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- كارد المحتوى -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardForm"
             android:layout_width="0dp"
@@ -46,12 +44,10 @@
                 android:layout_height="wrap_content"
                 android:padding="16dp">
 
-                <!-- اسم الحصة -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilLessonName"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-
                     app:boxCornerRadiusTopStart="14dp"
                     app:boxCornerRadiusTopEnd="14dp"
                     app:boxCornerRadiusBottomStart="14dp"
@@ -61,7 +57,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:hint="@string/CourseTitle_hint">
+                    android:hint="عنوان الحصة">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etLessonName"
@@ -73,13 +69,11 @@
                         android:maxLines="1" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- الوصف -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilDescription"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-
                     app:boxCornerRadiusTopStart="14dp"
                     app:boxCornerRadiusTopEnd="14dp"
                     app:boxCornerRadiusBottomStart="14dp"
@@ -89,7 +83,7 @@
                     app:layout_constraintTop_toBottomOf="@id/tilLessonName"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:hint="@string/Description_hint">
+                    android:hint="وصف الحصة">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etDescription"
@@ -103,20 +97,18 @@
                         android:gravity="top|start" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- Credits + VideoId في صف واحد -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilCredits"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-
                     app:boxCornerRadiusTopStart="14dp"
                     app:boxCornerRadiusTopEnd="14dp"
                     app:boxCornerRadiusBottomStart="14dp"
                     app:boxCornerRadiusBottomEnd="14dp"
                     app:boxStrokeColor="#1D4ED8"
                     app:hintTextColor="#1D4ED8"
-                    android:hint="@string/Credits_hint"
+                    android:hint="الكريديتس"
                     app:layout_constraintTop_toBottomOf="@id/tilDescription"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/tilVideoId"
@@ -138,7 +130,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-
                     app:boxCornerRadiusTopStart="14dp"
                     app:boxCornerRadiusTopEnd="14dp"
                     app:boxCornerRadiusBottomStart="14dp"
@@ -146,8 +137,6 @@
                     app:boxStrokeColor="#1D4ED8"
                     app:hintTextColor="#1D4ED8"
                     android:hint="YouTube Video ID"
-                    app:endIconMode="custom"
-                    app:endIconDrawable="@android:drawable/ic_menu_info_details"
                     app:layout_constraintTop_toBottomOf="@id/tilDescription"
                     app:layout_constraintStart_toEndOf="@id/tilCredits"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -163,58 +152,52 @@
                         android:maxLines="1" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/tilLessonGrade"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     app:boxCornerRadiusTopStart="14dp"
                     app:boxCornerRadiusTopEnd="14dp"
                     app:boxCornerRadiusBottomStart="14dp"
                     app:boxCornerRadiusBottomEnd="14dp"
-                    app:hintTextColor="#1D4ED8"
                     app:boxStrokeColor="#1D4ED8"
-                    app:layout_constraintBottom_toTopOf="@id/btnSaveLesson"
+                    app:hintTextColor="#1D4ED8"
+                    android:hint="الصف الدراسي"
                     app:layout_constraintTop_toBottomOf="@+id/tilCredits"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:hint="@string/lessonGrade"
-                    android:layout_marginTop="12dp">
+                    app:layout_constraintEnd_toEndOf="parent">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etLessonGrade"
+                    <AutoCompleteTextView
+                        android:id="@+id/spinnerLessonGrade"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:inputType="none"
                         android:textColor="#0B1220"
-                        android:textColorHint="#9CA3AF"
-                        android:inputType="textCapSentences"
-                        android:maxLines="1" />
+                        android:textColorHint="#9CA3AF" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-
-                <!-- زر الحفظ -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnSaveLesson"
                     android:layout_width="0dp"
                     android:layout_height="52dp"
                     android:insetTop="0dp"
                     android:insetBottom="0dp"
-                    android:text="@string/save_course"
+                    android:text="حفظ الحصة"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
-                    app:backgroundTint="#1D4ED8"
+                    app:backgroundTint="#D00BF4"
                     app:cornerRadius="16dp"
                     android:layout_marginTop="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tilLessonGrade" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- ملاحظة صغيرة تحت -->
         <TextView
             android:id="@+id/tvHint"
             android:layout_width="0dp"

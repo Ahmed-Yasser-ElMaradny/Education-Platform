@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "754526469206",
-    "project_id": "elostazmohamed-82bd0",
-    "storage_bucket": "elostazmohamed-82bd0.firebasestorage.app"
+    "project_number": "161125334459",
+    "project_id": "educationplatformdemo-42c8c",
+    "storage_bucket": "educationplatformdemo-42c8c.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:754526469206:android:928ab21b511d738085cff7",
+        "mobilesdk_app_id": "1:161125334459:android:44b85e1baf58051774989e",
         "android_client_info": {
-          "package_name": "com.ahmed.ostazMohamed"
+          "package_name": "com.ahmed.ostazahmed"
         }
       },
       "oauth_client": [
         {
-          "client_id": "754526469206-sfov7feaa3f42gg0ecdrfb5oeml57ej6.apps.googleusercontent.com",
+          "client_id": "161125334459-qqpkjj4g45tvd0i2p34l4fontl38odb1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ahmed.ostazahmed",
+            "certificate_hash": "e2ac1a6a18383c05dea363a299d0b26cbfe27529"
+          }
+        },
+        {
+          "client_id": "161125334459-i3ks96jisnjcqllh6heupfsf6selvdhg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDqcOgWrlcSzrdfUHqr-EejcZ3WspQSigc"
+          "current_key": "AIzaSyApG7B6LUciMq3zazxBH9fdynXFbDsfgc4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "754526469206-sfov7feaa3f42gg0ecdrfb5oeml57ej6.apps.googleusercontent.com",
+              "client_id": "161125334459-i3ks96jisnjcqllh6heupfsf6selvdhg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

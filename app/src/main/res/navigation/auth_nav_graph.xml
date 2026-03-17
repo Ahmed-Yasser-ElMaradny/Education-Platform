@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcomeScreen"
-        android:name="com.ahmed.ostazMohamed.Fragments.WelcomeScreen"
+        android:name="com.ahmed.ostazahmed.Fragments.WelcomeScreen"
         android:label="WelcomeScreen" >
         <action
             android:id="@+id/action_welcomeScreen_to_signInFragment"
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.ahmed.ostazMohamed.Fragments.SignInFragment"
+        android:name="com.ahmed.ostazahmed.Fragments.SignInFragment"
         android:label="SignInFragment" >
         <action
             android:id="@+id/action_signInFragment_to_signUpFragment"
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.ahmed.ostazMohamed.Fragments.SignUpFragment"
+        android:name="com.ahmed.ostazahmed.Fragments.SignUpFragment"
         android:label="SignUpFragment" >
         <action
             android:id="@+id/action_signUpFragment_to_signInFragment"
