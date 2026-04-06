@@ -12,6 +12,7 @@ import com.ahmed.ostazahmed.databinding.ActivityStudentCodeBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.firestore
+import kotlinx.coroutines.delay
 
 class StudentCodeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityStudentCodeBinding
@@ -35,6 +36,7 @@ class StudentCodeActivity : AppCompatActivity() {
             if (code.isEmpty()) {
                 binding.progressBar.visibility = View.GONE
                 Toast.makeText(this, "Please Enter Code", Toast.LENGTH_SHORT).show()
+                binding.btnRedeem.isEnabled = true
                 return@setOnClickListener
             }
 

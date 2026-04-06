@@ -65,6 +65,7 @@ class GenerateCodesFragment : Fragment() {
 
         val studentCodesToPdfViewModel =
             ViewModelProvider(this , factory)[StudentCodesToPdfViewModel::class.java]
+
         generateCodesViewModel.codeValidation()
 
         adapter = TeacherGeneratedCodesAdapter(

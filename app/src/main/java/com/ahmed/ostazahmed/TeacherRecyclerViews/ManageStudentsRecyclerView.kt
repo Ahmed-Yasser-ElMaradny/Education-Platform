@@ -31,7 +31,8 @@ class ManageStudentsRecyclerView(
         holder.binding.studentNameText.text = user.displayName
         holder.binding.studentAccountText.text = user.email
         holder.binding.creditsText.text = "User Credits : " + user.credits.toString()
-
+        holder.binding.chip4.text = if (user.isBlocked) "Blocked" else "Not Blocked"
+        holder.binding.chip4.setChipBackgroundColorResource(if (user.isBlocked) R.color.teal_200 else R.color.light_purple)
         holder.binding.buttonBlockStudent.setOnClickListener {
             onBlock(user)
             holder.binding.chip4.text = "Blocked"

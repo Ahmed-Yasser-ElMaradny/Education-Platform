@@ -60,5 +60,9 @@ class SignInFragment() : Fragment() {
                 ).show()
             }
         }
+
+        binding.forgotPasswordText.setOnClickListener {
+            findNavController().navigate(R.id.action_signInFragment_to_forgotPasswordFragment)
+        }
     }
 }

@@ -35,4 +35,15 @@ class AuthViewModel : ViewModel() {
 
         }
     }
+
+    fun forgotPassword(email: String, onResult: (Boolean, String) -> Unit) {
+        // هنا ممكن تحط حالة الـ Loading عشان تظهر Spinner في الشاشة
+        authRepository.resetPassword(email) { isSuccess, message ->
+            if (isSuccess) {
+                onResult(true, message)
+            } else {
+                onResult(false, message)
+            }
+        }
+    }
 }

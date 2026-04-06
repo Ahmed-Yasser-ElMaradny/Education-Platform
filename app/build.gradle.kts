@@ -12,9 +12,8 @@ android {
         applicationId = "com.ahmed.ostazahmed"
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
-
+        versionCode = 3
+        versionName = "1.0.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -60,10 +59,7 @@ dependencies {
 
     // JSON serialization library, works with the Kotlin serialization plugin
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
-    // callbackManager
-    implementation("com.facebook.android:facebook-login:latest.release")
-    // Or a specific version like:
-    implementation("com.facebook.android:facebook-login:17.0.0")
+
 
     // Import the BoM for the Firebase platform
     implementation(platform("com.google.firebase:firebase-bom:34.9.0"))

@@ -20,7 +20,7 @@
         android:layout_height="250dp"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/moon"
+        app:lottie_rawRes="@raw/pendulum"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,13 +91,13 @@
 
         <ImageButton
             android:id="@+id/goToCreditsPage"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/go_to_credits_page"
             android:scaleType="fitCenter"
-            android:src="@drawable/schoolbag"
+            android:src="@drawable/cash"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
@@ -133,10 +133,12 @@
         android:layout_height="0dp"
         android:layout_marginTop="12dp"
         android:clipToPadding="false"
-        android:paddingBottom="20dp"
         android:orientation="horizontal"
+        android:paddingBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCoursesTitle"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-91dp"
         tools:listitem="@layout/item_lesson_teacher" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

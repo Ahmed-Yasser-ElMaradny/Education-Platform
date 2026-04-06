@@ -3,14 +3,12 @@ package com.ahmed.ostazahmed
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
-import com.facebook.appevents.AppEventsLogger
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.ViewModelProvider
 import com.ahmed.ostazahmed.AuthenticationHelper.AppNavigator
-import com.facebook.FacebookSdk
 import com.ahmed.ostazahmed.AuthenticationHelper.AuthViewModel
 import com.ahmed.ostazahmed.Utils.FirebaseManager
 import com.ahmed.ostazahmed.databinding.ActivityMainBinding
@@ -30,10 +28,6 @@ class AuthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        FacebookSdk.setClientToken(getString(R.string.facebook_client_token))
-        FacebookSdk.sdkInitialize(applicationContext)
-        AppEventsLogger.activateApp(application)
         enableEdgeToEdge()
         setupUi()
         binding = ActivityMainBinding.inflate(layoutInflater)

@@ -1,6 +1,7 @@
 import com.ahmed.ostazahmed.Domain.User
 import com.ahmed.ostazahmed.Utils.FirebaseManager
 import com.ahmed.ostazahmed.Utils.UserRole
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 
@@ -96,6 +97,21 @@ class AuthRepository {
                 }
             }.addOnFailureListener {
                 onResult(null, false)
+            }
+    }
+
+    fun resetPassword(email: String, onResult: (Boolean, String) -> Unit) {
+        val auth = FirebaseAuth.getInstance()
+
+        auth.sendPasswordResetEmail(email)
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    // الإيميل اتبعت بنجاح
+                    onResult(true, "تم إرسال رابط تعديل كلمة المرور إلى بريدك الإلكتروني")
+                } else {
+                    // حصل خطأ (مثلاً الإيميل مش متسجل أصلاً)
+                    onResult(false, task.exception?.message ?: "حدث خطأ ما")
+                }
             }
     }
 }
